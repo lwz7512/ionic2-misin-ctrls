@@ -1,0 +1,124 @@
+// 卡片里的图片缩略图高度限制
+ion-col img {
+  max-height: 100px;
+  width: auto;
+}
+
+ion-searchbar {
+  background: rgba(0, 0, 0, 0.1);
+}
+ion-card.nogap {
+  margin: 0px 0 4px 0;
+  width: 100%;
+  border-radius: 0;
+}
+
+ion-card img.gap {
+  padding: 16px 16px 0 16px;
+}
+
+ion-card img.inline {
+  display: inline;
+}
+
+ion-card.orange-bg {
+  background: #F18C3A;
+  color: #FFFFFF;
+}
+
+ion-card ion-card-header.white {
+  color: #FFFFFF;
+}
+
+ion-card .tag {
+  font-size: 1.0rem;
+}
+
+// 表格中的列内容居中
+ion-row[center] ion-col {
+  /* Safari, Chrome, and Opera */
+  display:-webkit-box;
+  // 水平居中
+  -webkit-box-pack:center;
+  // 垂直居中
+  // -webkit-box-align:center;
+  // background-color: #F5F5F5;
+}
+ion-col[left] {
+  /* Safari, Chrome, and Opera */
+  display:-webkit-box;
+  justify-content: flex-start;
+  // -webkit-box-pack:start;
+}
+ion-col[right] {
+  /* Safari, Chrome, and Opera */
+  display:-webkit-box;
+  justify-content: flex-end;
+  -webkit-box-pack:end;
+}
+
+ion-col[right].center {
+  display: flex;
+  align-items: center;
+}
+
+
+[no-roundcorner] {
+  border-radius: 0;
+}
+
+[flex-box] {
+  // flexbox
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+}
+
+[flex-v-center] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  // 垂直居中
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+[flex-v-bottom]{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  // works!
+  align-self: flex-end;
+  -webkit-align-self: flex-end;
+}
+
+[small] {
+  font-size: 12px;
+}
+
+[wrap] {
+  white-space: normal;
+}
+
+smt-img {
+  display: block;
+  min-width: 100px;
+  height: auto;
+}
+
+
+.flex-h-right {
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+
+  justify-content: flex-end;
+  -webkit-box-pack:end;
+}
+
+
+// ...
