@@ -21,7 +21,7 @@
  *
  * import {SmartImage} from '../../components/smart-image';
  *
- 
+
  *
  *
  */
@@ -110,8 +110,11 @@ export class SmartImage {
   }
 
   // register this image to controller;
+  // FIXME, delay to notify, waiting for main page init...
+  // @2016/11/03
   _startLazyLoadCheck(){
-    this.events.publish('smtImg', this);
+    console.log('notify ctrl...');
+    setTimeout(()=>this.events.publish('smtImg', this), 100);
   }
 
   _stopLazyLoadCheck(){

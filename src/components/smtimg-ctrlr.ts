@@ -14,7 +14,7 @@ export class SmartImageController {
     this.smtImages = [];
   }
 
-  // public method
+  // public method called in ngAfterViewInit()
   iniLazyLoad(content: Content){
     this.content = content;
 
