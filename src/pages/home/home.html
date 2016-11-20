@@ -10,8 +10,6 @@
 
   <ion-list no-border>
 
-    <ion-list-header></ion-list-header>
-
     <button ion-item (click)="openSmartImagePage()">
       <ion-icon name='albums' item-left></ion-icon>
       Smart Image
@@ -24,7 +22,7 @@
       <ion-note item-right>img enhancment</ion-note>
     </button>
 
-    <button ion-item>
+    <button ion-item (click)="openHideableBarPage()">
       <ion-icon name='leaf' item-left></ion-icon>
       Hide Bars On Scroll
       <ion-note item-right>ue enhancment</ion-note>
@@ -39,6 +37,12 @@
     <button ion-item>
       <ion-icon name='flask' item-left></ion-icon>
       Accordion
+      <ion-note item-right>UI component</ion-note>
+    </button>
+
+    <button ion-item>
+      <ion-icon name='flask' item-left></ion-icon>
+      BotIconButton
       <ion-note item-right>UI component</ion-note>
     </button>
 

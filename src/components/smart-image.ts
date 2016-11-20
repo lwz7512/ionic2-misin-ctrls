@@ -43,6 +43,8 @@ export class SmartImage {
   _loopChecker: boolean;
 
   _fakeImg: HTMLImageElement;
+  // fix for mobile device load @2016/11/13
+  _inViewport: boolean;
 
   //access tag attribute 'src'
   @Input()
@@ -76,16 +78,22 @@ export class SmartImage {
 
     // FIXME, first check to detect if exist in viewport currently
     // @2016/10/06
-    let inViewport = this._isElementInViewport(this.elm.nativeElement);
-    if(inViewport) this._delayLoad = false;
+    // lazy detect inview on mobile device
+    // @2016/11/13
+    setTimeout(()=>{
+      this._inViewport = this._isElementInViewport(this.elm.nativeElement);
+      if(this._inViewport) this._delayLoad = false;
 
-    if(this._delayLoad) {
-      // console.log('start lazy loading...');
-      this._startLazyLoadCheck();
-      return;
-    }
+      console.log('inViewport:'+this._inViewport);
+      if(this._delayLoad) {
+        // console.log('start lazy loading...');
+        this._startLazyLoadCheck();
+        return;
+      }
 
-    this._fakeImg.src = this._imgURL;//start loading...
+      this._fakeImg.src = this._imgURL;//start loading...
+
+    }, 100);//waiting for parent init...
 
   }
 

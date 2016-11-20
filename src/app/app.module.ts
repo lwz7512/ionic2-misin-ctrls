@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import {ResponsibleItem} from '../components/responsible-item';
 import {SmartImage} from '../components/smart-image';
 import {SmartImageController} from '../components/smtimg-ctrlr';
+import {ScrollToolbar} from '../components/scroll-toolbar';
 // --- page component ---
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
@@ -13,12 +14,17 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import {SmtimgPage} from '../pages/smtimg-page/smtimg-page';
 import {LazyimgPage} from '../pages/lazyimg-page/lazyimg-page';
+import {HideftPage} from '../pages/hideft-page/hideft-page';
+import {AcdnPage} from '../pages/acdn-page/acdn-page';
+import {PikrPage} from '../pages/pikr-page/pikr-page';
+import {HbosPage} from '../pages/hbos-page/hbos-page';
 
 @NgModule({
   declarations: [
     // --- components
     ResponsibleItem, //--- directive
     SmartImage,
+    ScrollToolbar,
     MyApp, //------------ root component
     AboutPage,
     ContactPage,
@@ -26,9 +32,13 @@ import {LazyimgPage} from '../pages/lazyimg-page/lazyimg-page';
     TabsPage,
     SmtimgPage,
     LazyimgPage,
+    HideftPage,
+    AcdnPage,
+    PikrPage,
+    HbosPage,
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {backButtonText: '', tabsHideOnSubPages:"true"})
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -39,6 +49,10 @@ import {LazyimgPage} from '../pages/lazyimg-page/lazyimg-page';
     TabsPage,
     SmtimgPage,
     LazyimgPage,
+    HideftPage,
+    AcdnPage,
+    PikrPage,
+    HbosPage,
   ],
   providers: [
     SmartImageController, // 只能声明在这里

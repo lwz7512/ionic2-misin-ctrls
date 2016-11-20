@@ -6,6 +6,67 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-
+<ion-content >
+  <ion-grid>
+    <!-- all center -->
+    <ion-row center>
+      <ion-col>
+        <button ion-button small>Center</button>
+      </ion-col>
+      <ion-col >
+        <button ion-button small>Center</button>
+      </ion-col>
+      <ion-col >
+        <button ion-button small>Center</button>
+      </ion-col>
+    </ion-row>
+    <!-- L,C,R -->
+    <ion-row>
+      <ion-col>
+        <button ion-button small>Left</button>
+      </ion-col>
+      <ion-col center>
+        <button ion-button small>Center</button>
+      </ion-col>
+      <ion-col right>
+        <button ion-button small>Rightt</button>
+      </ion-col>
+    </ion-row>
+    <!-- TL, TC, TR -->
+    <ion-row class="higher">
+      <ion-col class="higher">
+        <button ion-button small>TopLeft</button>
+      </ion-col>
+      <ion-col class="higher" center>
+        <button ion-button small>TopLeft</button>
+      </ion-col>
+      <ion-col class="higher" right>
+        <button ion-button small>TopRight</button>
+      </ion-col>
+    </ion-row>
+    <!-- CL, CC, CR -->
+    <ion-row class="higher">
+      <ion-col class="higher" flex-v-center>
+        <button ion-button small>CenterLeft</button>
+      </ion-col>
+      <ion-col class="higher" flex-hv-center>
+        <button ion-button small>HoriVertCntr</button>
+      </ion-col>
+      <ion-col class="higher" flex-v-center-right>
+        <button ion-button small>VCenterRight</button>
+      </ion-col>
+    </ion-row>
+    <!-- BL, BC, BR -->
+    <ion-row >
+      <ion-col class="higher" flex-v-bottom-left>
+        <button ion-button small>BotmLeft</button>
+      </ion-col>
+      <ion-col class="higher" flex-v-bottom-center>
+        <button ion-button small>BotmCenter</button>
+      </ion-col>
+      <ion-col class="higher" flex-v-bottom-right>
+        <button ion-button small>BotmRight</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
