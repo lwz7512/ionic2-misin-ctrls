@@ -5,6 +5,7 @@ import { NavController } from 'ionic-angular';
 import {SmtimgPage} from '../smtimg-page/smtimg-page';
 import {LazyimgPage} from '../lazyimg-page/lazyimg-page';
 import {HideftPage} from '../hideft-page/hideft-page';
+import {SelectFabPage} from '../select-fab/select-fab';
 
 
 @Component({
@@ -30,5 +31,12 @@ export class HomePage {
   openHideableBarPage(){
     this.navCtrl.push(HideftPage);
   }
+
+  openSelectableFabtnPage(){
+    this.navCtrl.push(SelectFabPage);
+  }
+
+
+
 
 }

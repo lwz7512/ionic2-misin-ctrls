@@ -7,6 +7,8 @@ import {ResponsibleItem} from '../components/responsible-item';
 import {SmartImage} from '../components/smart-image';
 import {SmartImageController} from '../components/smtimg-ctrlr';
 import {ScrollToolbar} from '../components/scroll-toolbar';
+import {SelectableFab} from '../components/selectable-fab';
+
 // --- page component ---
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
@@ -18,6 +20,7 @@ import {HideftPage} from '../pages/hideft-page/hideft-page';
 import {AcdnPage} from '../pages/acdn-page/acdn-page';
 import {PikrPage} from '../pages/pikr-page/pikr-page';
 import {HbosPage} from '../pages/hbos-page/hbos-page';
+import {SelectFabPage} from '../pages/select-fab/select-fab';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,7 @@ import {HbosPage} from '../pages/hbos-page/hbos-page';
     ResponsibleItem, //--- directive
     SmartImage,
     ScrollToolbar,
+    SelectableFab,
     MyApp, //------------ root component
     AboutPage,
     ContactPage,
@@ -36,6 +40,7 @@ import {HbosPage} from '../pages/hbos-page/hbos-page';
     AcdnPage,
     PikrPage,
     HbosPage,
+    SelectFabPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp, {backButtonText: '', tabsHideOnSubPages:"true"})
@@ -53,6 +58,7 @@ import {HbosPage} from '../pages/hbos-page/hbos-page';
     AcdnPage,
     PikrPage,
     HbosPage,
+    SelectFabPage,
   ],
   providers: [
     SmartImageController, // 只能声明在这里
