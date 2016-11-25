@@ -1,7 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { Content, NavController } from 'ionic-angular';
 
-import {SmartImageController} from '../../components/smtimg-ctrlr';
 
 /*
   Generated class for the LazyimgPage page.
@@ -15,10 +14,8 @@ import {SmartImageController} from '../../components/smtimg-ctrlr';
 })
 export class LazyimgPage {
 
-  @ViewChild(Content)
-  content:Content;
 
-  wp:any[] = [
+  wp:string[] = [
     'http://hd.wallpaperswide.com/thumbs/idyllic_landscape_italy-t2.jpg',
     'http://hd.wallpaperswide.com/thumbs/norway_mountains_2-t2.jpg',
     'http://hd.wallpaperswide.com/thumbs/swag_girl_2017_art_irbis_production-t2.jpg',
@@ -28,12 +25,7 @@ export class LazyimgPage {
 
   constructor(
     public navCtrl: NavController,
-    public smtCtrl: SmartImageController
   ) {}
-
-  ngAfterViewInit() {
-    this.smtCtrl.iniLazyLoad(this.content);
-  }
 
 
   ionViewDidLoad() {

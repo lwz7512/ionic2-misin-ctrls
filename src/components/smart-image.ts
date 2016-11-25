@@ -84,7 +84,7 @@ export class SmartImage {
       this._inViewport = this._isElementInViewport(this.elm.nativeElement);
       if(this._inViewport) this._delayLoad = false;
 
-      console.log('inViewport:'+this._inViewport);
+      // console.log('inViewport:'+this._inViewport);
       if(this._delayLoad) {
         // console.log('start lazy loading...');
         this._startLazyLoadCheck();
@@ -121,7 +121,7 @@ export class SmartImage {
   // FIXME, delay to notify, waiting for main page init...
   // @2016/11/03
   _startLazyLoadCheck(){
-    console.log('notify ctrl...');
+    // console.log('notify ctrl...');
     setTimeout(()=>this.events.publish('smtImg', this), 100);
   }
 

@@ -2,10 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 /*
-  Generated class for the HideftPage page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
+  demo page for hide foot-bar on scroll content
 */
 @Component({
   selector: 'page-hideft-page',
@@ -17,6 +14,10 @@ export class HideftPage {
 
   ionViewDidLoad() {
     console.log('Hello HideftPage Page');
+  }
+
+  scrollHandler() {
+    console.log('scrolled!');
   }
 
 }

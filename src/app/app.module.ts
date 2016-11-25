@@ -6,8 +6,9 @@ import { MyApp } from './app.component';
 import {ResponsibleItem} from '../components/responsible-item';
 import {SmartImage} from '../components/smart-image';
 import {SmartImageController} from '../components/smtimg-ctrlr';
-import {ScrollToolbar} from '../components/scroll-toolbar';
+import {ScrollFooter} from '../components/scroll-footer';
 import {SelectableFab} from '../components/selectable-fab';
+import {SmartImageDetector} from '../components/smtimg-detcr';
 
 // --- page component ---
 import { AboutPage } from '../pages/about/about';
@@ -27,8 +28,9 @@ import {SelectFabPage} from '../pages/select-fab/select-fab';
     // --- components
     ResponsibleItem, //--- directive
     SmartImage,
-    ScrollToolbar,
+    ScrollFooter,
     SelectableFab,
+    SmartImageDetector,
     MyApp, //------------ root component
     AboutPage,
     ContactPage,
@@ -61,7 +63,7 @@ import {SelectFabPage} from '../pages/select-fab/select-fab';
     SelectFabPage,
   ],
   providers: [
-    SmartImageController, // 只能声明在这里
+    SmartImageController, // declared here only
   ]
 })
 export class AppModule {}

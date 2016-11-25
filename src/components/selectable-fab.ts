@@ -1,5 +1,6 @@
 import { Directive, ElementRef, HostListener, Input, Renderer } from '@angular/core';
 import {Events} from 'ionic-angular';
+
 /**
  * selectable fab button, support deselect other btns while select one
  * @2016/11/22
