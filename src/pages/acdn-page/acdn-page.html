@@ -7,12 +7,73 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>AcdnPage</ion-title>
+    <ion-title>Accordion Page</ion-title>
   </ion-navbar>
 
 </ion-header>
 
+<!--
 
-<ion-content padding>
+borders-component:
+
+<div style="border:1px solid black">
+    <ng-content select="header"></ng-content>
+</div>
+<div style="border:1px solid red">
+    <ng-content select="div.body"></ng-content>
+</div>
+<div style="border:1px solid orange">
+    <ng-content select="footer"></ng-content>
+</div>
+
+<borders-component>
+    <header>I'm a header</header>
+    <div class="body">I'm a body</div>
+    <footer>I'm a footer</footer>
+</borders-component>
+
+black-border:
+
+<div style="border:1px solid black">
+    <ng-content></ng-content>
+</div>
+
+<black-border>
+    <h1>Hello World</h1>
+</black-border>
+
+ -->
+<ion-content>
+
+  <accordion-list>
+
+    <accordion-item>
+      <accd-title>
+        Item 1
+      </accd-title>
+      <accd-content>
+        <p>Item 1 content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim viverra velit sed euismod. Mauris sed quam vehicula, dapibus ante a, aliquet augue.</p>
+      </accd-content>
+    </accordion-item>
+
+    <accordion-item>
+      <accd-title>
+        Item 2
+      </accd-title>
+      <accd-content>
+        <p>Item 1 content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim viverra velit sed euismod. Mauris sed quam vehicula, dapibus ante a, aliquet augue.</p>
+      </accd-content>
+    </accordion-item>
+
+    <accordion-item>
+      <accd-title>
+        Item x
+      </accd-title>
+      <accd-content>
+        <p>Item 1 content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim viverra velit sed euismod. Mauris sed quam vehicula, dapibus ante a, aliquet augue.</p>
+      </accd-content>
+    </accordion-item>
+
+  </accordion-list>
 
 </ion-content>

@@ -1,0 +1,21 @@
+page-topicon-btn {
+
+  // ------ start of top-icn button ---------------
+  button[top-icn].button:not([icon-only],[icon-left],[icon-right]) .button-inner {
+  	flex-direction: column;
+  	-webkit-flex-direction: column;
+  }
+  button[top-icn].button-ios, button-md {
+    padding: 0;
+    margin: 0.4rem;
+    height: 3.2em;
+
+    ion-icon {
+      font-size: 1.8em;
+      margin: 4px;
+    }
+  }
+  // ------ end of top-icon button ----------------
+
+
+}

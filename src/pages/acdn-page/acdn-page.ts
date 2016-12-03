@@ -8,7 +8,7 @@ import { NavController } from 'ionic-angular';
   selector: 'page-acdn-page',
   templateUrl: 'acdn-page.html'
 })
-export class AcdnPage {
+export class AccordionPage {
 
   constructor(public navCtrl: NavController) {}
 

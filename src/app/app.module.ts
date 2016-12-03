@@ -9,6 +9,7 @@ import {SmartImageController} from '../components/smtimg-ctrlr';
 import {ScrollFooter} from '../components/scroll-footer';
 import {SelectableFab} from '../components/selectable-fab';
 import {SmartImageDetector} from '../components/smtimg-detcr';
+import {AccdTitle, AccdContent, AccdItem, Accordion} from '../components/accordion';
 
 // --- page component ---
 import { AboutPage } from '../pages/about/about';
@@ -18,10 +19,12 @@ import { TabsPage } from '../pages/tabs/tabs';
 import {SmtimgPage} from '../pages/smtimg-page/smtimg-page';
 import {LazyimgPage} from '../pages/lazyimg-page/lazyimg-page';
 import {HideftPage} from '../pages/hideft-page/hideft-page';
-import {AcdnPage} from '../pages/acdn-page/acdn-page';
+import {AccordionPage} from '../pages/acdn-page/acdn-page';
 import {PikrPage} from '../pages/pikr-page/pikr-page';
-import {HbosPage} from '../pages/hbos-page/hbos-page';
+// import {HbosPage} from '../pages/hbos-page/hbos-page';
 import {SelectFabPage} from '../pages/select-fab/select-fab';
+import {TopiconBtnPage} from '../pages/topicon-btn/topicon-btn';
+
 
 @NgModule({
   declarations: [
@@ -31,6 +34,10 @@ import {SelectFabPage} from '../pages/select-fab/select-fab';
     ScrollFooter,
     SelectableFab,
     SmartImageDetector,
+    AccdTitle,
+    AccdContent,
+    AccdItem,
+    Accordion,
     MyApp, //------------ root component
     AboutPage,
     ContactPage,
@@ -39,10 +46,11 @@ import {SelectFabPage} from '../pages/select-fab/select-fab';
     SmtimgPage,
     LazyimgPage,
     HideftPage,
-    AcdnPage,
+    AccordionPage,
     PikrPage,
-    HbosPage,
+    // HbosPage,
     SelectFabPage,
+    TopiconBtnPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp, {backButtonText: '', tabsHideOnSubPages:"true"})
@@ -57,10 +65,11 @@ import {SelectFabPage} from '../pages/select-fab/select-fab';
     SmtimgPage,
     LazyimgPage,
     HideftPage,
-    AcdnPage,
+    AccordionPage,
     PikrPage,
-    HbosPage,
+    // HbosPage,
     SelectFabPage,
+    TopiconBtnPage,
   ],
   providers: [
     SmartImageController, // declared here only
