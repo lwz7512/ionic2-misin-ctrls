@@ -10,6 +10,7 @@ import {ScrollFooter} from '../components/scroll-footer';
 import {SelectableFab} from '../components/selectable-fab';
 import {SmartImageDetector} from '../components/smtimg-detcr';
 import {AccdTitle, AccdContent, AccdItem, Accordion} from '../components/accordion';
+import {PickerContainer, PickerModalController} from '../components/picker-ctnr';
 
 // --- page component ---
 import { AboutPage } from '../pages/about/about';
@@ -21,7 +22,7 @@ import {LazyimgPage} from '../pages/lazyimg-page/lazyimg-page';
 import {HideftPage} from '../pages/hideft-page/hideft-page';
 import {AccordionPage} from '../pages/acdn-page/acdn-page';
 import {PikrPage} from '../pages/pikr-page/pikr-page';
-// import {HbosPage} from '../pages/hbos-page/hbos-page';
+import {MockPickContent} from '../pages/pikr-page/mock-picked';
 import {SelectFabPage} from '../pages/select-fab/select-fab';
 import {TopiconBtnPage} from '../pages/topicon-btn/topicon-btn';
 
@@ -38,6 +39,8 @@ import {TopiconBtnPage} from '../pages/topicon-btn/topicon-btn';
     AccdContent,
     AccdItem,
     Accordion,
+    PickerContainer,
+    MockPickContent,
     MyApp, //------------ root component
     AboutPage,
     ContactPage,
@@ -48,7 +51,6 @@ import {TopiconBtnPage} from '../pages/topicon-btn/topicon-btn';
     HideftPage,
     AccordionPage,
     PikrPage,
-    // HbosPage,
     SelectFabPage,
     TopiconBtnPage,
   ],
@@ -67,12 +69,14 @@ import {TopiconBtnPage} from '../pages/topicon-btn/topicon-btn';
     HideftPage,
     AccordionPage,
     PikrPage,
-    // HbosPage,
     SelectFabPage,
     TopiconBtnPage,
+    PickerContainer,
+    MockPickContent,
   ],
   providers: [
     SmartImageController, // declared here only
+    PickerModalController,
   ]
 })
 export class AppModule {}
