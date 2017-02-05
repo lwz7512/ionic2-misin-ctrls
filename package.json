@@ -2,7 +2,7 @@
   "name": "ionic2-misin-ctrls",
   "version": "1.0.0",
   "author": "lwz7512",
-  "homepage": "https://github.com/lwz7512/ionic2-misin-ctrls",
+  "homepage": "http://market.ionic.io/starters/ionic2-missing-controls",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
