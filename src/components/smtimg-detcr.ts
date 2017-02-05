@@ -47,7 +47,7 @@ export class SmartImageDetector {
     });
     // listen to smart image ini...
     this.events.subscribe('smtImg', params => {
-      this.smtImages.push(params[0]);
+      this.smtImages.push(params);
     });
   }
 

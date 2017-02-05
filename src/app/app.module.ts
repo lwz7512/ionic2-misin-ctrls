@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { IonicApp, IonicModule } from 'ionic-angular';
+import { NgModule, ErrorHandler } from '@angular/core';
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 // --- root component ---
 import { MyApp } from './app.component';
 // --- custome component ---
@@ -13,7 +13,7 @@ import {AccdTitle, AccdContent, AccdItem, Accordion} from '../components/accordi
 import {PickerContainer, PickerModalController} from '../components/picker-ctnr';
 
 // --- page component ---
-import { AboutPage } from '../pages/about/about';
+import { LayoutsPage } from '../pages/layouts/layouts';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -42,7 +42,7 @@ import {TopiconBtnPage} from '../pages/topicon-btn/topicon-btn';
     PickerContainer,
     MockPickContent,
     MyApp, //------------ root component
-    AboutPage,
+    LayoutsPage,
     ContactPage,
     HomePage,
     TabsPage,
@@ -60,7 +60,7 @@ import {TopiconBtnPage} from '../pages/topicon-btn/topicon-btn';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
+    LayoutsPage,
     ContactPage,
     HomePage,
     TabsPage,
@@ -75,6 +75,7 @@ import {TopiconBtnPage} from '../pages/topicon-btn/topicon-btn';
     MockPickContent,
   ],
   providers: [
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
     SmartImageController, // declared here only
     PickerModalController,
   ]

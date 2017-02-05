@@ -20,16 +20,18 @@ export class SmartImageController {
 
     // collect smart image...
     this.events.subscribe('smtImg', params => {
-      this.smtImages.push(params[0]);
+      // console.log(params);
+      this.smtImages.push(params);
     });
 
     // console.log('ng after view init...');
-    this.content.addScrollListener(event => {
-      // console.log(event.target.scrollTop);
-      this.smtImages.forEach(image => {
-        // image callback to check viewpot...
-        image.scrollNotify();
-      })
+    this.content.ionScroll.subscribe(
+      event => {
+        // console.log(event);
+        this.smtImages.forEach(image => {
+            image.scrollNotify();
+          }
+        );
     });
   }
 
